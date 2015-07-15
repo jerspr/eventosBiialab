@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('../fonts/HelveticaRegular.eot');
+    src: url('../fonts/HelveticaRegular.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaRegular.woff2') format('woff2'),
+         url('../fonts/HelveticaRegular.woff') format('woff'),
+         url('../fonts/HelveticaRegular.ttf') format('truetype'),
+         url('../fonts/HelveticaRegular.svg#HelveticaRegular') format('svg');
+}
+body{font-family: 'HelveticaRegular', arial;font-size: 16px;}
+.box-fluid{display: inline-block;vertical-align: top;width: 100%;}
+/*nav one*/
+.nav-header-menu{min-height: 90px;background: #333;}
+.logo-biia{float: left;margin-top: 15px;margin-left: 10px;}
+.logo-biia h1{margin: 0;}
+.logo-biia h1 a{display: block;background: url(../img/logo-biia.png) no-repeat;width: 264px;height: 60px;text-indent: -9999999px;}
+
+/*Footer*/
+.footer-all{min-height: 90px;background: #F2F3F4;text-align: center;}
+.footer-all p{color: #333333;font-size: 20px;line-height: 120%;margin-bottom: 0;}
+.footer-all p.font-footer{font-size: 26px;font-weight: bold;margin-top: 18px;}
