@@ -100,6 +100,7 @@ a.btn-event:hover{background: #666;color: #fff;}
 .text-f-input input{background: #fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height: 42px;border:1px solid #fff;-webkit-box-shadow:0 0 0;-moz-box-shadow:0 0 0;box-shadow:0 0 0;}
 .check-login label{color: #666666;font-size: 14px;}
 .pass-c{text-align: right;font-size: 14px;color: #F2581A;}
+.pass-c:hover{color: #F2581A;}
 .btn-logeo{float: right;text-transform: uppercase;color: #fff;font-size: 16px;background: #F2581A;height: 42px;line-height: 42px;padding:0 50px 0 50px;border:1px solid #F2581A;margin-top: 35px;}
 .header-login{padding: 30px;}
 .footer-login{background: #E6E6E6;padding: 30px;}
