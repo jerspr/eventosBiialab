@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('../fonts/HelveticaRegular.eot');
+    src: url('../fonts/HelveticaRegular.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaRegular.woff2') format('woff2'),
+         url('../fonts/HelveticaRegular.woff') format('woff'),
+         url('../fonts/HelveticaRegular.ttf') format('truetype'),
+         url('../fonts/HelveticaRegular.svg#HelveticaRegular') format('svg');
+}
+body{font-family: 'HelveticaRegular', arial;font-size: 16px;background: #fff;}
+.box-fluid{display: inline-block;vertical-align: top;width: 100%;}
+/*nav one*/
+.nav-header-menu{min-height: 90px;background: #333;}
+.logo-biia{float: left;margin-top: 15px;margin-left: 10px;}
+.logo-biia h1{margin: 0;}
+.logo-biia h1 a{display: block;background: url(../img/logo-biia.png) no-repeat;width: 264px;height: 60px;text-indent: -9999999px;}
+.logeo-end{list-style: none;float: right;overflow: hidden;padding-left: 0;margin-right: 15px;margin-top: 33px;}
+.logeo-end li{float: left;margin-left: 22px;}
+.logeo-end li:first-child{margin-left: 0;}
+.logeo-end li a{display: block;color: #999999;font-size: 16px;}
+/*nav secundario*/
+.nav-header-all{background: #fff;height: 62px;-webkit-box-shadow:0px 2px 5px 0px rgba(153, 153, 153, 0.35);-moz-box-shadow:0px 2px 5px 0px rgba(153, 153, 153, 0.35);box-shadow:0px 2px 5px 0px rgba(153, 153, 153, 0.35);}
+.btn-group-biia{margin-top: 9px;}
+.btn-group-biia a{border: 1px solid #333333;height: 42px;width: 50px;}
+.btn-group-biia a span{color: #333;}
+.btn-group-biia a.active{border: 1px solid #333;background: #333;}
+.btn-group-biia a.active span{color: #fff;}
+.btn-group-biia a:hover, .btn-group-biia a.active:hover{border: 1px solid #333;background: #333;}
+.btn-group-biia a:hover span, .btn-group-biia a.active:hover span{color: #fff;}
+a.btn-event{background: #F2581A;font-size: 16px;color: #fff;text-decoration: none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+a.btn-home{padding: 0px 15px;height: 42px;line-height: 42px;margin-top: 8px;float: right;}
+a.btn-event:hover{background: #666;color: #fff;}
+.left-select{float: left;width: 48%;margin-right: 4%;}
+.rigth-select{float: left;width: 48%;}
+.select-btn{border:1px solid #DFDFDF;height: 42px;background: #fff;text-transform: uppercase;color: #666666;font-size: 16px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;margin-top: 10px;}
+.from-search{position: relative;}
+.from-search .inline-search{width: 100%;padding-right: 40%;position: relative;}
+.from-search .inline-search input{border:1px solid #CCCCCC;height: 42px;padding: 0 10px;background: #fff;width: 100%;margin-top: 10px;padding-right: 32px;}
+.from-search .inline-search .btn-search{position: absolute;left: 52.8%;top: 10px;border: 0;height: 42px;background: #fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding: 0 5px;}
+.from-search .inline-search .btn-search span{color: #999;font-size: 22px;}
+.from-search span.name-pais{position: absolute;left: 62%;color: #999999;font-size: 16px;top: 18px;}
+.from-search span.name-pais em{text-decoration: underline;font-style: normal;color: #333333;font-size: 16px;}
+/*Content items*/
+.container-eventos{padding-top: 35px;padding-bottom: 25px;}
+.item-evento figure img{width: 100%;}
+.footer-fecha{min-height: 30px;background: #CCCCCC;}
+.left-dia{float: left;margin-left: 5px;margin-top: 4px;}
+.left-dia span{color: #333333;font-size: 12px;display: inline-block;vertical-align: middle;text-transform: uppercase;}
+.right-preci{float: right;margin-right: 5px;font-size: 14px;color: #333333;margin-top: 4px;}
+.title-evento{min-height: 50px;background: #333333;position: relative;}
+.title-evento h2{padding-left: 70px;color: #fff;font-size: 20px;margin: 0;line-height: 50px;height: 50px;overflow: hidden;}
+.fecha-evento{position: absolute;bottom: 0;left: 10px;width: 50px;}
+.header-fecha{background: #F2581A;height: 18px;text-align: center;line-height: 18px;color: #fff;font-size: 12px;width: 100%;}
+.num-fecha{height: 42px;background: #fff;text-align: center;line-height: 42px;font-size: 30px;font-weight: bold;color: #333;width: 100%;}
+.items-list{margin-bottom: 30px;}
+.swiper-slide img{width: 100%;}
+.swiper-button-next{background: url(../img/prevnext.png) no-repeat;background-position: -38px 0;width: 38px;height: 64px;}
+.swiper-button-prev{background: url(../img/prevnext.png) no-repeat;background-position: 0 0px;width: 38px;height: 64px;}
+.cnt-center-slider{margin-left: auto;margin-right: auto;position: absolute;left: 0;right: 0;top: 60px;width: 600px;text-align: center;}
+.swiper-slide h3{text-align: center;margin: 0;padding: 0 20px;}
+.swiper-slide h3 span{display: inline-block;vertical-align: middle;background: #000;font-size: 30px;font-weight: bold;color: #fff;padding: 12px 20px;line-height: 120%;}
+.btn-slider{width: 170px;height: 44px;display: block;margin: 0 auto;line-height: 44px;font-size: 16px;text-align: center;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-top: 10px;}
+/*Eventos*/
+.container-calendario{}
+.cnt-calendario>h3{font-weight: bold;font-size: 16px;padding-left: 0;margin: 0;margin-bottom: 10px;}
+.cnt-calendario .list-group{margin-bottom: 30px;}
+.cnt-calendario .list-group span{font-size: 14px;color: #BABABA;line-height: 120%;vertical-align: middle;}
+.cnt-calendario .list-group h2{margin: 0;color: #333333;font-size: 20px;line-height: 120%;margin: 5px 0;}
+.cnt-calendario .list-group em{font-style: normal;font-size: 14px;color: #666666;line-height: 120%;}
+.cnt-calendario .list-group em span{font-weight: bold;font-size: 14px;color: #F47D50;}
+.cnt-calendario .list-group-item{border:1px solid #eee;overflow: hidden;}
+.left-time{float: left;width: 12%;color: #999999;font-size: 16px;}
+.cnt-info-event{float: left;width: 88%;}
+.pull-left{margin-top: 10px;margin-left: 10px;}
+.pull-right{margin-right: 10px;margin-top: 10px;}
+.pull-left .btn-primary{background: url(../img/prev-next.png) no-repeat;width: 30px;height: 30px;background-position: 0 0;border:0;text-indent: -999999px;}
+.pull-right .btn-primary{background: url(../img/prev-next.png) no-repeat;width: 30px;height: 30px;background-position: -30px 0;border:0;text-indent: -999999px;}
+.responsive-calendar{background: #EEEEEE;}
+.responsive-calendar hr{display: none;}
+.responsive-calendar .controls{height: 50px;background: #333;}
+.responsive-calendar .day{font-size: 16px;text-transform: uppercase;font-weight: bold;color: #333333;}
+.responsive-calendar .day.header{border-bottom: 0!important;}
+.responsive-calendar .day-headers{padding-top: 15px;padding-bottom: 5px;}
+.responsive-calendar .day a{background: #FFFFFF;font-size: 16px;color: #333333;font-weight: bold;}
+.responsive-calendar .days{padding: 10px;}
+.responsive-calendar .day.active a{background-color: #F2581A!important;}
+.responsive-calendar .badge{font-weight: normal;font-size: 8px;padding: 3px 5px;color: #fff;}
+/*Sgni*/
+.sig-wrapper{padding-top: 30px;padding-bottom: 50px;}
+.content-960{width: 960px;background: #EEEEEE;margin: 0 auto;overflow: hidden;}
+.left-wrapper{float: left;width: 50%;padding-right: 30px;}
+.right-wrapper{float: left;width: 50%;padding-left: 30px;}
+.border-right{border-right: 1px solid #CCCCCC;}
+.border-left{border-left:1px solid #FFFFFF;}
+.text-login h3{color: #333333;font-size: 20px;font-weight: bold;margin-top: 0;margin-bottom: 50px;line-height: 120%;}
+.btn-login-face{display: block;height: 52px;font-size: 18px;color: #fff;font-weight: bold;background: #3A579A;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align: center;line-height: 52px;}
+.btn-login-face:hover{color: #fff;}
+.btn-login-face span{display: inline-block;vertical-align: middle;width: 14px;height: 20px;margin-right: 5px;background: url(../img/face.png) no-repeat;}
+.text-f-input label{font-size: 16px;color: #999999;}
+.text-f-input input{background: #fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height: 42px;border:1px solid #fff;-webkit-box-shadow:0 0 0;-moz-box-shadow:0 0 0;box-shadow:0 0 0;}
+.check-login label{color: #666666;font-size: 14px;}
+.pass-c{text-align: right;font-size: 14px;color: #F2581A;}
+.pass-c:hover{color: #F2581A;}
+.btn-logeo{float: right;text-transform: uppercase;color: #fff;font-size: 16px;background: #F2581A;height: 42px;line-height: 42px;padding:0 50px 0 50px;border:1px solid #F2581A;margin-top: 35px;}
+.header-login{padding: 30px;}
+.footer-login{background: #E6E6E6;padding: 30px;}
+.footer-login p{color: #333333;font-size: 20px;margin-top: 0;margin-bottom: 0;line-height: 120%;}
+.footer-login p a{font-size: 20px;color: #F2581A;text-decoration: underline;}
+.footer-login p a:hover{text-decoration: none;}
+/*Footer*/
+.footer-all{min-height: 90px;background: #F2F3F4;text-align: center;}
+.footer-all p{color: #333333;font-size: 20px;line-height: 120%;margin-bottom: 0;}
+.footer-all p.font-footer{font-size: 26px;font-weight: bold;margin-top: 18px;}
