@@ -162,6 +162,25 @@ a.btn-event:hover{background: #666;color: #fff;}
 .total-pagar{font-size: 14px;color: #666666;font-weight: bold;margin-top: 12px;}
 .cnt-preci-submit span{font-size: 14px;color: #666666;font-weight: bold;margin-right: 30px;margin-top: 12px;}
 .btn-comprar{text-transform: uppercase;color: #FFFFFF;font-size: 16px;text-align: center;height: 42px;background: #F2581A;line-height: 42px;padding-left: 15px;padding-right: 15px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;border:0;}
+/*Crear evento*/
+.content-bloque-f{background: #EEEEEE;padding: 20px;margin-bottom: 30px;}
+.form-crear-evento h3{font-size: 27px;color: #F25819;font-weight: bold;margin-top: 0;margin-bottom: 45px;}
+.form-crear-evento .form-group{margin-bottom: 20px;}
+.form-crear-evento .form-group>label{font-size: 16px;color: #666666;font-weight: bold;}
+.form-crear-evento .form-group input[type='text']{height: 42px;border:1px solid #fff;background: #fff;-webkit-box-shadow:0 0 0;-moz-box-shadow:0 0 0;box-shadow:0 0 0;}
+.form-crear-evento .form-group select{height: 42px;padding: 6px 6px;background: #fff;border:1px solid #fff;-webkit-box-shadow:0 0 0;-moz-box-shadow:0 0 0;box-shadow:0 0 0;}
+.form-crear-evento .form-group select.text-bold{font-size: 16px;color: #666666;font-weight: bold;}
+.form-crear-evento .form-group textarea{border:1px solid #fff;background: #FFFFFF;-webkit-box-shadow:0 0 0;-moz-box-shadow:0 0 0;box-shadow:0 0 0;}
+.form-crear-evento .form-group .text-r-k{font-size: 14px;color: #666666;}
+.form-crear-evento .form-group .custom-k{padding-left: 20px;}
+.form-crear-evento .form-group .custom-k label{font-size: 12px;font-weight: bold;}
+.form-crear-evento .form-group .custom-k input{margin-top: 2px;}
+.form-crear-evento .form-group>em{font-size: 14px;color: #F2581A;display: inline-block;vertical-align: top;font-style: normal;float: right;}
+.content-two-b{padding: 0;}
+.content-primery-b{padding: 20px;background: #EEEEEE;}
+.content-second-b{padding: 20px;background: #E2E2E2;}
+.btn-publicar-e{height: 42px;color: #fff;line-height: 12px;background: #F2581A;font-weight: bold;font-size: 16px;padding: 0 35px;border:0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.footer-form-button span{font-size: 14px;color: #333333;font-weight: bold;margin-top: 12px;}
 /*Footer*/
 .footer-all{min-height: 90px;background: #F2F3F4;text-align: center;}
 .footer-all p{color: #333333;font-size: 20px;line-height: 120%;margin-bottom: 0;}
