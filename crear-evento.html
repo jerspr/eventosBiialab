@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventos</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive-calendar.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav-header-menu box-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="logo-biia">
+                <h1>
+                  <a href="#">Biialab Eventos</a>
+                </h1>
+              </div>
+              <ul class="logeo-end">
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Iniciar sesion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-header-all box-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <form action="" id="buscar" class="from-search">
+                <div class="inline-search">
+                  <input type="text" name="buscarInput" id="buscarInput" placeholder="Todos los eventos" />
+                  <button type="submit" class="btn-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </div>
+                <span class="name-pais">de <em>Lima, PE</em></span>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <select name="pais" class="form-control select-btn left-select" id="idpais">
+                <option value="18">Perú</option>
+                <option value="19">Ecuador</option>
+                <option value="20">Chile</option>
+              </select>
+              <select name="pais" class="form-control select-btn rigth-select" id="idpais">
+                <option value="">Categoría</option>
+                <option value="1">Dato 1</option>
+                <option value="2">Dato 2</option>
+                <option value="2">Dato 2</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <div class="btn-group btn-group-lg btn-group-biia" role="group" aria-label="Large button group">
+                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></a>
+                <a href="#" class="btn btn-default active"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
+              </div>
+              <a href="#" class="btn-event btn-home">CREAR EVENTO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-eventos box-fluid">
+        <div class="content-960 content-detalle">
+          <div class="banner-detalle box-fluid">
+            <img src="img/banner.jpg" />
+          </div>
+          <div class="detalle-show box-fluid">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="left-container box-fluid">
+                  <h1>Lima Ilustra 2015 “Convención Internacional de Diseño y Marketing Digital”</h1>
+                  <div class="tag-detalle box-fluid">
+                    <p class="tag-item"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><a href="#">ARTE Y CULTURA</a></p>
+                    <p class="tag-visible"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>PUBLICO</p>
+                  </div>
+                  <div class="content-info-pago box-fluid">
+                    <form action="">
+                      <div class="box-fluid time-one">
+                        <div class="row">
+                          <div class="col-md-5 text-info-t time-calendar">
+                            <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Fechas disponibles:</p>
+                          </div>
+                          <div class="col-md-7">
+                            <select class="form-control" name="fecha-select">
+                              <option>Sabado 4 de julio, 2015</option>
+                              <option>Sabado 5 de julio, 2015</option>
+                              <option>Sabado 6 de julio, 2015</option>
+                              <option>Sabado 7 de julio, 2015</option>
+                              <option>Sabado 8 de julio, 2015</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-fluid text-info-t time-info">
+                        <p><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 6:00 pm <em>(hasta las 8:00pm)</em></p>
+                      </div>
+                      <div class="tabla-content box-fluid">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr class="title-table">
+                              <th>Tipo</th>
+                              <th class="center">Precio</th>
+                              <th class="center">Cantidad</th>
+                            </tr>
+                          </thead>
+                          <tbody class="cnt-table">
+                            <tr>
+                              <td class="text-table-cnt">Ingreso Gratuito</td>
+                              <td class="right-text text-table-cnt">S/. 150.00</td>
+                              <td>
+                                <select class="form-control" name="cantidad">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="footer-table box-fluid">
+                        <span class="left total-pagar">Total a pagar:</span>
+                        <div class="right cnt-preci-submit">
+                          <span class="left">S/. 150.00</span>
+                          <button type="submit" class="btn-comprar right">COMPRAR AHORA</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="info-detalle-text items-detalle box-fluid">
+                    <h3>Detalle del Evento</h3>
+                    <p><span>"Lima Ilustra 2015 es la “convención internacional de diseño, Publicidad y Marketing Digital más importante y ambiciosa realizada en Perú"</span>. La convención se destaca por ser un evento de carácter interdisciplinario donde se desarrollarán temas acerca de diseño, ilustración, fotografía, Animación 3D, Lettering, Papercraft, Branding, Seo, Google Analític y Estrategias de Marketing Digital.Sumado a conferencias, talleres experimentales, intervenciones, y exposiciones.Dicha convención, es un encuentro que genera lograr un intercambio cultural entre los expositores y asistentes, el evento se realizará en Lima los <strong>días 27, 28, 29 y 30 de Agosto 2015</strong>.Lima ilustra 2015 será un encuentro de intercambio cultural contará, con los ponentes más destacados internacionales y nacionales de reconocida fama. Además estarán las marcas más representativas del rubro en exposición dentro del área de auspiciadores.</p>
+                    <h4>DIRIGIDO: </h4>
+                    <p>Emprendedores, pymes, community managers y público en general que quiera aprender a hacer sus propios diseños gráficos digitales. </p>
+                    <h4>INCLUYE </h4>
+                    <ul>
+                      <li>Material Educativo</li> 
+                      <li>4 Sesiones</li> 
+                      <li>Consultoría de negocios en marketing digital</li>
+                    </ul>
+                  </div>
+                  <div class="items-detalle box-fluid">
+                    <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%" data-numposts="5"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="sidebar-container box-fluid">
+                  <a href="#" class="btn-invitar">INVITA A AMIGOS</a>
+                  <div class="social-shared box-fluid">
+                    <span class="text-shared">Compartir:</span>
+                    <ul>
+                      <li><a href="#" class="fb"></a></li>
+                      <li><a href="#" class="tw"></a></li>
+                      <li><a href="#" class="gp"></a></li>
+                    </ul>
+                  </div>
+                  <div class="map box-fluid">
+                    <img src="img/map.jpg" />
+                  </div>
+                  <div class="info-direccion box-fluid">
+                    <span>Lima, PE</span>
+                    <h3>Av. Guzmán Blanco N° 150, Of. 301, Cercado de Lima</h3>
+                    <p>Media cuadra del ovalo Bolognesi (Al costado de la escuela de manejos Jorge Chavez)</p>
+                    <a href="#" class="btn-calendario"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Agregar a mi calendario</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-all box-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="font-footer">BiiA Lab</p>
+              <p>©2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4&appId=101268106646636";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/responsive-calendar.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
