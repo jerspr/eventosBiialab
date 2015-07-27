@@ -18,4 +18,5 @@ $(document).ready(function(){
             "2015-07-10": {"number": 1, "badgeClass": "badge-evento", "url": "calendario.html"}
         }
     });
+    $('.fileinput').fileinput();
 });

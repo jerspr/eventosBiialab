@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive-calendar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -68,6 +69,23 @@
 	          			</div>
 	          			<div class="col-md-5">
 	          				<div class="sidebar-form box-fluid">
+	          					<div class="form-group">
+	          						<label>Image* (700 x 438px)</label>
+	          						<div class="fileinput fileinput-new box-fluid" data-provides="fileinput">
+									  	<div class="fileinput-new thumbnail" style="width: 100%; height: 200px;">
+									    	<img data-src="holder.js/100%x100%" alt="...">
+									  	</div>
+									  	<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 100%; max-height: 438px;"></div>
+									  	<div>
+									    	<span class="btn btn-default btn-file btn-content-file">
+									    		<span class="fileinput-new btn-cargar-imagen"><span class="glyphicon glyphicon-plus"></span>Cargar</span>
+									    		<span class="fileinput-exists btn-change-h"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> Cambiar</span>
+									    		<input type="file" name="file-image">
+									    	</span>
+									    	<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span> Eliminar</a>
+									  	</div>
+									</div>
+	          					</div>
 	          					<div class="form-group">
 							        <label for="video">Video</label>
 							        <input type="text" class="form-control" id="name-event" name="video" placeholder="Copia el link de tu video youtube">
@@ -462,6 +480,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/responsive-calendar.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
