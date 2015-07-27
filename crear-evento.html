@@ -36,41 +36,6 @@
           </div>
         </div>
       </div>
-      <div class="nav-header-all box-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <form action="" id="buscar" class="from-search">
-                <div class="inline-search">
-                  <input type="text" name="buscarInput" id="buscarInput" placeholder="Todos los eventos" />
-                  <button type="submit" class="btn-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                </div>
-                <span class="name-pais">de <em>Lima, PE</em></span>
-              </form>
-            </div>
-            <div class="col-md-4">
-              <select name="pais" class="form-control select-btn left-select" id="idpais">
-                <option value="18">Perú</option>
-                <option value="19">Ecuador</option>
-                <option value="20">Chile</option>
-              </select>
-              <select name="pais" class="form-control select-btn rigth-select" id="idpais">
-                <option value="">Categoría</option>
-                <option value="1">Dato 1</option>
-                <option value="2">Dato 2</option>
-                <option value="2">Dato 2</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <div class="btn-group btn-group-lg btn-group-biia" role="group" aria-label="Large button group">
-                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></a>
-                <a href="#" class="btn btn-default active"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
-              </div>
-              <a href="#" class="btn-event btn-home">CREAR EVENTO</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container-eventos box-fluid">
         <div class="content-960 content-detalle">
         	<form action="" class="form-crear-evento">
@@ -105,7 +70,7 @@
 	          				<div class="sidebar-form box-fluid">
 	          					<div class="form-group">
 							        <label for="video">Video</label>
-							        <input type="text" class="form-control" id="name-event" name="video">
+							        <input type="text" class="form-control" id="name-event" name="video" placeholder="Copia el link de tu video youtube">
 							    </div>
 	          				</div>
 	          			</div>
@@ -276,73 +241,196 @@
 	          	<div class="content-bloque-f content-two-b box-fluid">
 	          		<div class="content-primery-b box-fluid">
 	          			<h3>Crear entradas</h3>
-
-	          		</div>
-	          		<div class="content-second-b box-fluid">
 	          			<div class="row">
-	          				<div class="col-md-4">
+	          				<div class="col-md-7">
 	          					<div class="form-group">
-							        <label for="min-cantidad-orden">Min cantidad por orden</label>
-							        <select class="form-control" name="min-cantidad-orden">
-		                              <option>1</option>
-		                              <option>5</option>
-		                              <option>10</option>
-		                              <option>15</option>
-		                              <option>20</option>
-		                            </select>
-							    </div>
+	          						<select name="currency" class="form-control">
+	          							<option value="PEN">S/. - Nuevos Soles</option>
+										<option value="USD">$ - Dólares Americanos</option>
+									</select>
+	          					</div>
 	          				</div>
-	          				<div class="col-md-4">
-	          					<div class="form-group">
-							        <label for="max-cantidad-orden">Max cantidad por orden</label>
-							        <select class="form-control" name="max-cantidad-orden">
-		                              <option>10</option>
-		                              <option>20</option>
-		                              <option>30</option>
-		                              <option>40</option>
-		                              <option>50</option>
-		                            </select>
-							    </div>
-	          				</div>
-	          				<div class="col-md-4">
-	          					<div class="form-group">
-							        <label for="max-cantid-user">Max cantidad por usuario</label>
-							        <select class="form-control" name="max-cantid-user">
-		                              <option>Ilimitado</option>
-		                              <option>30</option>
-		                              <option>20</option>
-		                              <option>10</option>
-		                              <option>5</option>
-		                            </select>
-							    </div>
-	          				</div>
-	          			</div>
-	          			<div class="row">
-	          				<div class="col-md-8">
-	          					<div class="form-group">
-							        <label for="desc-two">Descripción</label>
-							        <textarea class="form-control" name="desc-two" rows="4"></textarea>
-							    </div>
-	          				</div>
-	          				<div class="col-md-4">
-	          					<div class="form-group">
-							        <label for="visibilidad">&nbsp;</label>
-									<div class="checkbox text-r-k">
-									  <label>
-									    <input type="checkbox" value="">
-									    Activado
-									  </label>
-									</div>
-									<div class="checkbox text-r-k">
-									  <label>
-									    <input type="checkbox" value="">
-									    ¿Pago por internet?
-									  </label>
-									</div>
-								</div>
+	          				<div class="col-md-5">
+	          					<button type="button" class="btn btn-block btn-agregar" onclick="return add_ticket(this);"><span class="glyphicon glyphicon-plus"></span> Agregar ticket</button>
 	          				</div>
 	          			</div>
 	          		</div>
+	          		<div class="box-fluid" id="ticketRowsContainer">
+	          			<div class="row list-ticket ticketRow">
+		          			<div class="col-md-12">
+		          				<div class="list-header-ticket box-fluid">
+		          					<div class="row">
+		          						<div class="col-md-5">
+		          							<div class="form-group">
+										        <label for="name-ticket">Nombre del ticket</label>
+										        <input type="text" class="form-control" id="name-ticket" name="ticketTypes[0][name]" placeholder="Ej. Gratis">
+										    </div>
+		          						</div>
+		          						<div class="col-md-2">
+		          							<div class="form-group">
+										        <label for="cantidad-ticket">Cantidad</label>
+										        <input type="text" class="form-control" id="cantidad-ticket" name="ticketTypes[0][quantityMax]" placeholder="0">
+										    </div>
+		          						</div>
+		          						<div class="col-md-3">
+		          							<div class="form-group">
+										        <label for="precio-ticket">Precio</label>
+										        <input type="text" class="form-control" id="precio-ticket" name="ticketTypes[0][price]" placeholder="0.00">
+										    </div>
+		          						</div>
+		          						<div class="col-md-2">
+		          							<div class="form-group">
+		          								<label>&nbsp;</label>
+		          								<button type="button" class="btn btn-gainsboro btn-block btn-show-b" onclick="$(this).parents('.list-ticket').first('.list-header-ticket').find('.moreinfo').slideToggle();">
+			          								<span class="caret"></span>
+			          							</button>
+		          							</div>
+		          						</div>
+		          					</div>
+		          				</div>
+		          				<div class="content-second-b box-fluid moreinfo" style="display:none;">
+				          			<div class="row">
+				          				<div class="col-md-4">
+				          					<div class="form-group">
+										        <label for="min-cantidad-orden">Min cantidad por orden</label>
+										        <select class="form-control" name="ticketTypes[0][minQuantityPerOrder]">
+					                              <option value="1" selected="selected">1</option>
+					                              <option value="2">2</option>
+					                              <option value="3">3</option>
+					                              <option value="4">4</option>
+					                              <option value="5">5</option>
+					                              <option value="6">6</option>
+					                              <option value="7">7</option>
+					                              <option value="8">8</option>
+					                              <option value="9">9</option>
+					                              <option value="10">10</option>
+					                              <option value="11">11</option>
+					                              <option value="12">12</option>
+					                              <option value="13">13</option>
+					                              <option value="14">14</option>
+					                              <option value="15">15</option>
+					                              <option value="16">16</option>
+					                              <option value="17">17</option>
+					                              <option value="18">18</option>
+					                              <option value="19">19</option>
+					                              <option value="20">20</option>
+					                            </select>
+										    </div>
+				          				</div>
+				          				<div class="col-md-4">
+				          					<div class="form-group">
+										        <label for="max-cantidad-orden">Max cantidad por orden</label>
+										        <select class="form-control" name="ticketTypes[0][maxQuantityPerOrder]">
+					                              <option value="1">1</option>
+					                              <option value="2">2</option>
+					                              <option value="3">3</option>
+					                              <option value="4">4</option>
+					                              <option value="5">5</option>
+					                              <option value="6">6</option>
+					                              <option value="7">7</option>
+					                              <option value="8">8</option>
+					                              <option value="9">9</option>
+					                              <option value="10" selected="selected">10</option>
+					                              <option value="11">11</option>
+					                              <option value="12">12</option>
+					                              <option value="13">13</option>
+					                              <option value="14">14</option>
+					                              <option value="15">15</option>
+					                              <option value="16">16</option>
+					                              <option value="17">17</option>
+					                              <option value="18">18</option>
+					                              <option value="19">19</option>
+					                              <option value="20">20</option>
+					                            </select>
+										    </div>
+				          				</div>
+				          				<div class="col-md-4">
+				          					<div class="form-group">
+										        <label for="max-cantid-user">Max cantidad por usuario</label>
+										        <select class="form-control" name="ticketTypes[0][maxQuantityPerUser]">
+					                              <option value="0" selected="selected">Ilimitado</option>
+					                              <option value="1">1</option>
+					                              <option value="2">2</option>
+					                              <option value="3">3</option>
+					                              <option value="4">4</option>
+					                              <option value="5">5</option>
+					                              <option value="6">6</option>
+					                              <option value="7">7</option>
+					                              <option value="8">8</option>
+					                              <option value="9">9</option>
+					                              <option value="10">10</option>
+					                              <option value="11">11</option>
+					                              <option value="12">12</option>
+					                              <option value="13">13</option>
+					                              <option value="14">14</option>
+					                              <option value="15">15</option>
+					                              <option value="16">16</option>
+					                              <option value="17">17</option>
+					                              <option value="18">18</option>
+					                              <option value="19">19</option>
+					                              <option value="20">20</option>
+					                            </select>
+										    </div>
+				          				</div>
+				          			</div>
+				          			<div class="row">
+				          				<div class="col-md-8">
+				          					<div class="form-group">
+										        <label for="desc-two">Descripción</label>
+										        <textarea class="form-control" name="ticketTypes[0][description]" rows="4"></textarea>
+										    </div>
+				          				</div>
+				          				<div class="col-md-4">
+				          					<div class="form-group">
+										        <label for="visibilidad">&nbsp;</label>
+												<div class="checkbox text-r-k">
+												  <label>
+												    <input type="checkbox" name="ticketTypes[0][enabled]" value="">
+												    Activado
+												  </label>
+												</div>
+												<div class="checkbox text-r-k">
+												  <label>
+												    <input type="checkbox" name="ticketTypes[0][payOnline]" value="">
+												    ¿Pago por internet?
+												  </label>
+												</div>
+											</div>
+				          				</div>
+				          			</div>
+				          		</div>
+		          			</div>
+		          		</div>
+	          		</div>
+	          		<script>
+						var ticketCount = 1;
+					    function add_ticket(btn) {
+					        var typesContainer = $("#ticketRowsContainer");
+					        if (typesContainer.find(".ticketRow").length >= 15)
+					    		return;
+					        var currentCount = ticketCount;
+					        var template = "<div class=\"row list-ticket ticketRow\"><div class=\"col-md-12\"><div class=\"list-header-ticket box-fluid\"><div class=\"row\"><div class=\"col-md-5\"><div class=\"form-group\"><label for=\"name-ticket\">Nombre del ticket</label><input type=\"text\" class=\"form-control\" id=\"name-ticket\" name=\"ticketTypes[__index__][name]\" placeholder=\"Ej. Gratis\"></div></div><div class=\"col-md-2\"><div class=\"form-group\"><label for=\"cantidad-ticket\">Cantidad</label><input type=\"text\" class=\"form-control\" id=\"cantidad-ticket\" name=\"ticketTypes[__index__][quantityMax]\" placeholder=\"0\"></div></div><div class=\"col-md-3\"><div class=\"form-group\"><label for=\"precio-ticket\">Precio</label><input type=\"text\" class=\"form-control\" id=\"precio-ticket\" name=\"ticketTypes[__index__][price]\" placeholder=\"0.00\"></div></div><div class=\"col-md-2\"><div class=\"form-group\"><label>&nbsp;</label><button type=\"button\" class=\"btn btn-gainsboro btn-block btn-show-b\" onclick='$(this).parents(\".list-ticket\").first(\".list-header-ticket\").find(\".moreinfo\").slideToggle();'><span class=\"caret\"></span></button></div></div></div></div><div class=\"content-second-b box-fluid moreinfo\" style=\"display:none;\"><div class=\"row\"><div class=\"col-md-4\"><div class=\"form-group\"><label for=\"min-cantidad-orden\">Min cantidad por orden</label><select class=\"form-control\" name=\"ticketTypes[__index__][minQuantityPerOrder]\"><option value=\"1\" selected=\"selected\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option><option value=\"11\">11</option><option value=\"12\">12</option><option value=\"13\">13</option><option value=\"14\">14</option><option value=\"15\">15</option><option value=\"16\">16</option><option value=\"17\">17</option><option value=\"18\">18</option><option value=\"19\">19</option><option value=\"20\">20</option></select></div></div><div class=\"col-md-4\"><div class=\"form-group\"><label for=\"max-cantidad-orden\">Max cantidad por orden</label><select class=\"form-control\" name=\"ticketTypes[__index__][maxQuantityPerOrder]\"><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\" selected=\"selected\">10</option><option value=\"11\">11</option><option value=\"12\">12</option><option value=\"13\">13</option><option value=\"14\">14</option><option value=\"15\">15</option><option value=\"16\">16</option><option value=\"17\">17</option><option value=\"18\">18</option><option value=\"19\">19</option><option value=\"20\">20</option></select></div></div><div class=\"col-md-4\"><div class=\"form-group\"><label for=\"max-cantid-user\">Max cantidad por usuario</label><select class=\"form-control\" name=\"ticketTypes[__index__][maxQuantityPerUser]\"><option value=\"0\" selected=\"selected\">Ilimitado</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option><option value=\"11\">11</option><option value=\"12\">12</option><option value=\"13\">13</option><option value=\"14\">14</option><option value=\"15\">15</option><option value=\"16\">16</option><option value=\"17\">17</option><option value=\"18\">18</option><option value=\"19\">19</option><option value=\"20\">20</option></select></div></div></div><div class=\"row\"><div class=\"col-md-8\"><div class=\"form-group\"><label for=\"desc-two\">Descripción</label><textarea class=\"form-control\" name=\"ticketTypes[__index__][description]\" rows=\"4\"></textarea></div></div><div class=\"col-md-4\"><div class=\"form-group\"><label for=\"visibilidad\">&nbsp;</label><div class=\"checkbox text-r-k\"><label><input type=\"checkbox\" name=\"ticketTypes[__index__][enabled]\" value=\"\">Activado</label></div><div class=\"checkbox text-r-k\"><label><input type=\"checkbox\" name=\"ticketTypes[__index__][payOnline]\" value=\"\">¿Pago por internet?</label></div></div></div><div class=\"row\"><div class=\"col-md-12\"><button type=\"button\" class=\"btn btn-default btn-xs btn-delete-r\" onclick='del_ticket(this);'><span class=\"glyphicon glyphicon-trash\"></span> Eliminar ticket</button><input type=\"hidden\" name=\"ticketTypes[__index__][deleteonsave]\" class=\"del-on-save\" value=\"0\"></div></div></div></div></div></div>";
+					        template = template.replace(/__index__/g, ticketCount);
+					        var col = $(template);
+					        col.addClass("not-saved-item");
+					        col.find("input[type='text']").val("");
+					        col.find(".ticket-type-enabled-field").prop("checked", true);
+					        col.find(".ticket-type-payment-field").prop("checked", false);
+					        col.appendTo(typesContainer);
+					        ticketCount++;
+					        return false;
+					    }
+					    function del_ticket(btn) {
+					    	var typesContainer = $("#ticketRowsContainer");
+					    	$(btn).parents(".ticketRow").first().css({
+					        	'opacity': 0.3
+					    	});
+					    	$(btn).parents(".ticketRow").first().find(".del-on-save").val(1);
+					    	if ($(btn).parents(".ticketRow").first().hasClass("not-saved-item"))
+					    		$(btn).parents(".ticketRow").first().remove();
+					    	$(btn).attr("disabled", "disabled");
+					    }
+					</script>
 	          	</div>
 	          	<div class="content-bloque-f footer-form-button box-fluid">
 	          		<span class="left">¡Después de crear tu actividad podrás invitar a tus amigos y compartirla en tus redes sociales!</span>
