@@ -85,6 +85,8 @@ a.btn-event:hover{background: #666;color: #fff;}
 .responsive-calendar .days{padding: 10px;}
 .responsive-calendar .day.active a{background-color: #F2581A!important;}
 .responsive-calendar .badge{font-weight: normal;font-size: 8px;padding: 3px 5px;color: #fff;}
+.mes-calendar{color: #fff;font-size: 20px;font-weight: bold;text-decoration: underline;line-height: 50px;}
+.anio-calendar{color: #F2581A;font-size: 20px;font-weight: bold;text-decoration: underline;line-height: 50px;}
 /*Sgni*/
 .sig-wrapper{padding-top: 30px;padding-bottom: 50px;}
 .content-960{width: 960px;background: #EEEEEE;margin: 0 auto;overflow: hidden;}
@@ -181,6 +183,22 @@ a.btn-event:hover{background: #666;color: #fff;}
 .content-second-b{padding: 20px;background: #E2E2E2;}
 .btn-publicar-e{height: 42px;color: #fff;line-height: 12px;background: #F2581A;font-weight: bold;font-size: 16px;padding: 0 35px;border:0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .footer-form-button span{font-size: 14px;color: #333333;font-weight: bold;margin-top: 12px;}
+.btn-agregar{background: #333333;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;height: 42px;border:1px solid #333;color: #fff;font-size: 14px;text-transform: uppercase;}
+.btn-agregar:hover{color: #fff;text-decoration: underline;}
+.list-header-ticket{padding: 15px 20px 0px 20px;}
+.btn-show-b{background: #E2E2E2;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height: 42px;font-size: 20px;color: #545454;}
+.btn-show-b:hover{border:1px solid #999;}
+.list-ticket{border-bottom: 1px solid #ccc;}
+.btn-delete-r{padding: 0 15px;height: 32px;}
+.btn-content-file{padding: 0;width: 100%;margin-top: 18px;}
+.btn-cargar-imagen{width: 100%;height: 42px;background: #333333;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display: block;color: #fff;text-transform: uppercase;font-size: 14px;line-height: 42px;}
+.btn-cargar-imagen .glyphicon{margin-right: 10px;}
+.fileinput-exists .btn-default{width: 50%;height: 42px;margin-top: 18px;float: left;margin-right: 2%;}
+.fileinput-exists a.btn-default{width: 48%;margin-right: 0;line-height: 42px;padding-top: 0;padding-bottom: 0;text-transform: uppercase;font-size: 14px;}
+.fileinput-exists .btn-change-h{display: block;line-height: 42px;text-transform: uppercase;}
+.fileinput-exists .btn-change-h .glyphicon{margin-right: 10px;}
+#search-map{padding: 10px 12px;}
+.custom-search-input{-webkit-border-radius: 4px 0 0 4px;-moz-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;border: 1px solid #ccc!important;}
 /*Footer*/
 .footer-all{min-height: 90px;background: #F2F3F4;text-align: center;}
 .footer-all p{color: #333333;font-size: 20px;line-height: 120%;margin-bottom: 0;}
